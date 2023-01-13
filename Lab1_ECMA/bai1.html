@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css" media="screen">
+    #target{
+        width: 60px;
+        height: 60px;
+        background: #33691E;
+    }
+
+</style>
+<body>
+    <div id="target">
+    </div>
+</body>
+<script>
+    var target = document.querySelector("#target");
+    target.onmouseover = function(){
+        // Thực hiện đổi sang màu #BF360C
+        target.style.background = "#BF360C";
+        
+        
+    }
+    target.onmouseout = function(){
+        // Thực hiện đổi sang màu #33691E
+        target.style.background = "#33691E";
+    }
+</script>
+</html>

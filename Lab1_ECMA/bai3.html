@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css" media="screen"> 
+    .user_item{
+        color: green;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <ul id="target">
+
+    </ul>
+</body>
+<script>
+    var users = [
+        { id: 1, name: "Dương Đức Duy", gerder:1},
+        { id: 2, name: "Dương hoài Vũ", gerder:2},
+        { id: 3, name: "Phùng Quang Minh", gerder:2},
+        { id: 4, name: "Nguyễn Thành Văn", gerder:1},
+    ];
+    var target = document.querySelector("#target");
+    users.map(function(item){
+        var tag = document.createElement("li");
+        tag.setAttribute("class","user_item");
+        tag.innerText=`${item.id}- ${item.name}- ${item.gerder}`;
+        target.appendChild(tag);
+    });
+</script>
+</html>
